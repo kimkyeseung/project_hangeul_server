@@ -63,7 +63,6 @@ typings/
 .psd
 
 .env
-package.json
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
