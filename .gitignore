@@ -61,7 +61,7 @@ typings/
 .next
 
 .psd
-
+*.zip
 .env
 # Elastic Beanstalk Files
 .elasticbeanstalk/*

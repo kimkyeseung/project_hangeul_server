@@ -2,14 +2,16 @@ branch-defaults:
   dev:
     environment: project-hangeul-development
   master:
-    environment: project-hangeul-production
+    environment: project-hangeul-product
+    group_suffix: null
 environment-defaults:
   ProjectHangeul-env:
     branch: null
     repository: null
 global:
   application_name: project-hangeul
-  default_ec2_keyname: null
+  branch: null
+  default_ec2_keyname: aws-eb
   default_platform: arn:aws:elasticbeanstalk:eu-west-2::platform/Node.js running on
     64bit Amazon Linux/4.5.4
   default_region: eu-west-2
@@ -18,5 +20,6 @@ global:
   platform_name: null
   platform_version: null
   profile: eb-cli
+  repository: null
   sc: git
   workspace_type: Application
