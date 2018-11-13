@@ -2,7 +2,7 @@ branch-defaults:
   dev:
     environment: project-hangeul-development
   master:
-    environment: project-hangeul-product
+    environment: project-hangeul
     group_suffix: null
 environment-defaults:
   ProjectHangeul-env:
