@@ -32,6 +32,10 @@ AWS.config.update({
 AWS.config.region = 'us-east-2';
 const s3 = new AWS.S3();
 
+router.get('/', (req, res, next) => {
+  res.render('index');
+});
+
 router.get('/fonts', (req, res, next) => {
   if (req.query.page && isNaN(Number(req.query.page))) {
     next(new InvalidParameterError('page'));
