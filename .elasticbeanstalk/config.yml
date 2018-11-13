@@ -2,10 +2,13 @@ branch-defaults:
   dev:
     environment: project-hangeul-development
   master:
-    environment: project-hangeul
+    environment: project-hangeul-product
     group_suffix: null
 environment-defaults:
   ProjectHangeul-env:
+    branch: null
+    repository: null
+  project-hangeul-product:
     branch: null
     repository: null
 global:

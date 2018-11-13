@@ -30,7 +30,7 @@ jobs:
           name: Deploy to env
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
-                eb deploy project-hangeul
+                eb deploy project-hangeul-product
             else
                 eb deploy project-hangeul-development
             fi
