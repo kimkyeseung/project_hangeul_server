@@ -4,11 +4,11 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const mongoose = require('mongoose');
 const cors = require('cors');
+require('dotenv').config();
 
 const index = require('./routes/index');
 
 const app = express();
-
 mongoose.connect(`mongodb://admin:${process.env.MONGO_MLAB_DATABASE}@ds263590.mlab.com:63590/project_hangeul`, { useNewUrlParser: true });
 mongoose.set('useCreateIndex', true);
 const db = mongoose.connection;
